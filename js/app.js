@@ -41,7 +41,7 @@ function validateEmail() {
 
 function validatePhoneNumber() {
     const phone_number = document.querySelector('#phone_number');
-    const re = /^\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4}$/;
+    const re = /^\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4}$/; // Validate phone number 555-555-5555
 
     if (!re.test(phone_number.value)) {
         phone_number.classList.add('is-invalid');
